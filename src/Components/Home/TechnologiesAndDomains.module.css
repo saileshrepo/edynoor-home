@@ -1,0 +1,334 @@
+/* === General Container Styling === */
+
+.tdContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.leftRightWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1300px;
+    margin: 40px auto;
+    gap: 40px;
+}
+
+.leftContainer,
+.rightContainer {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    background-color: #fdfdfd;
+    border-radius: 16px;
+    padding: 30px 25px;
+    box-shadow: 2px 2px 5px #929292;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+
+/* === About Section === */
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutP {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #444;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.cloudareLogo {
+    width: 220px;
+    height: auto;
+    margin-top: 20px;
+}
+
+
+/* === Client Slider Section === */
+
+.clientsSection {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.clientSlider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #e3e3e3;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+.clientTrack {
+    display: flex;
+    width: fit-content;
+    animation: clientScroll 10s linear infinite;
+}
+
+.clientSlide {
+    flex: 0 0 auto;
+    width: 120px;
+    margin: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clientLogo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.clientLogo:hover {
+    transform: scale(1.08);
+}
+
+@keyframes clientScroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* === Section Containers === */
+
+.container {
+    text-align: center;
+    background-color: #f1f9ff;
+    padding: 40px 20px;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.highlight {
+    color: #007bff;
+}
+
+
+/* === Slider (Reusable) === */
+
+.slider {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    margin-top: 20px;
+}
+
+.sliderTrack {
+    display: flex;
+    width: max-content;
+}
+
+.leftToRight {
+    animation: scrollRight 12s linear infinite;
+}
+
+.rightToLeft {
+    animation: scrollLeft 12s linear infinite;
+}
+
+@keyframes scrollRight {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes scrollLeft {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.slideItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+    padding: 15px;
+    margin: 10px;
+    width: 150px;
+    box-sizing: border-box;
+}
+
+.slideItem img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.slideItem p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}
+
+
+/* === Career Section === */
+
+.careerSection {
+    background: white;
+    margin-top: 40px;
+    padding: 30px;
+    width: 90%;
+    border-radius: 12px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.careerSection h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.careerSection p {
+    font-size: 1.125rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.benefitsList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.benefitsList li {
+    font-size: 1rem;
+    color: #333;
+}
+
+
+/* === Responsive Design === */
+
+@media (max-width: 1024px) {
+
+    .leftContainer,
+    .rightContainer {
+        padding: 20px;
+    }
+
+    .careerSection h2 {
+        font-size: 1.75rem;
+    }
+
+    .careerSection p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .leftRightWrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .leftContainer,
+    .rightContainer {
+        max-width: 90%;
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .careerSection h2 {
+        font-size: 1.5rem;
+    }
+
+    .careerSection p,
+    .aboutP {
+        font-size: 0.95rem;
+    }
+
+    .cloudareLogo {
+        width: 180px;
+    }
+
+    .slideItem {
+        width: 120px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cloudareLogo {
+        width: 150px;
+    }
+
+    .slideItem {
+        width: 100px;
+        padding: 8px;
+    }
+
+    .slideItem p {
+        font-size: 12px;
+    }
+
+    .clientLogo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .careerSection {
+        padding: 20px 15px;
+    }
+
+    .benefitsList {
+        gap: 10px;
+    }
+
+    .benefitsList li {
+        font-size: 0.9rem;
+    }
+}

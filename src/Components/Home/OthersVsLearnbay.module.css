@@ -1,0 +1,205 @@
+/* === Global Reset and Box Sizing === */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+/* === Section Wrapper === */
+
+.sectionWrapper {
+    padding: 1rem;
+}
+
+
+/* === Top Logo Section === */
+
+.logoSection {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 2.5rem auto;
+    padding: 1.5rem;
+    max-width: 960px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.companyLogos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.logoBox {
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.companyLogos img {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+    object-position: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/* === Sliding and Zooming Effects === */
+
+.slideIn {
+    animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.zoomOnHover {
+    transition: transform 0.3s ease, scale 0.3s ease;
+}
+
+.zoomOnHover:hover img {
+    transform: scale(1.2);
+}
+
+
+/* === Hover Effects === */
+
+.companyLogos .logoBox:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.hiringText {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
+}
+
+
+/* === Comparison Section === */
+
+.comparisonSection {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+}
+
+.title {
+    text-align: center;
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.comparisonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.comparisonColumn {
+    flex: 1 1 30%;
+    min-width: 280px;
+    background-color: #f5f5f5;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.comparisonColumn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.learnbayColumn {
+    background-color: #1c1c1c;
+    color: #fff;
+    flex: 1.5 1 35%;
+}
+
+.othersColumn {
+    background-color: #eaeaea;
+    color: #111;
+}
+
+.lightColumn {
+    background-color: #ecf3fb;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.row {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.brand {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #007bff;
+}
+
+.pointList {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.pointList li {
+    font-size: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.pointList li span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pointList li img {
+    width: 25px;
+    height: 25px;
+}

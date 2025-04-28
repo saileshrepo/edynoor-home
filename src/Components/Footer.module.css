@@ -1,0 +1,103 @@
+.footer {
+    background-color: #bcbcbc;
+    color: #000000;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.topSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    gap: 30px;
+}
+
+.footerColumn {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footerColumn h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.footerColumn ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footerColumn li {
+    margin-bottom: 10px;
+}
+
+.footerColumn li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footerColumn li a:hover {
+    color: #ff9900;
+}
+
+.addressBox {
+    font-size: 13px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.address {
+    color: #000000;
+}
+
+.viewMore {
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: 1px solid #000000;
+    background: transparent;
+    color: #000000;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 14px;
+    color: #000000;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 12px;
+    font-size: 20px;
+}
+
+.socialIcons a {
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+    color: #ff9900;
+}
+
+.bottomBar {
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #888;
+}
+
+.copyRight {
+    color: rgb(0, 0, 0);
+}

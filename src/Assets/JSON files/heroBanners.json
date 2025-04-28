@@ -1,0 +1,41 @@
+[
+    {
+        "title": "India’s #1 Project-based Upskilling Platform for Professionals",
+        "highlight": "#1 Project-based",
+        "bullets": [
+            "✔ Get ready to crack your dream job interview",
+            "✔ Learn from industry experts on real projects"
+        ],
+        "background": "linear-gradient(135deg, #ff6f00 0%, #2e2e2e 100%)",
+        "logos": [
+            "/ibm.png",
+            "/RE1Mu3b.png"
+        ]
+    },
+    {
+        "title": "Master In-demand Skills With Real-World Projects",
+        "highlight": "Real-World Projects",
+        "bullets": [
+            "✔ Hands-on experience with real tools",
+            "✔ Projects from top tech companies"
+        ],
+        "background": "linear-gradient(135deg, #ff7a18 0%, #363636 100%)",
+        "logos": [
+            "/ibm.png",
+            "/RE1Mu3b.png"
+        ]
+    },
+    {
+        "title": "Upgrade Your Career with Mentorship & Support",
+        "highlight": "Mentorship & Support",
+        "bullets": [
+            "✔ One-on-one mentorship from experts",
+            "✔ Tailored career planning"
+        ],
+        "background": "linear-gradient(135deg, #ff914d 0%, #1f1f1f 100%)",
+        "logos": [
+            "/ibm.png",
+            "/RE1Mu3b.png"
+        ]
+    }
+]

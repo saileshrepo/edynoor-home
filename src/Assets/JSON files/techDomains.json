@@ -1,0 +1,50 @@
+{
+    "leftToRight": [
+        {
+            "name": "Data Science",
+            "icon": "/DS.avif"
+        },
+        {
+            "name": "Data Analytics",
+            "icon": "/DA.avif"
+        },
+        {
+            "name": "Business Analytics",
+            "icon": "/BA.avif"
+        },
+        {
+            "name": "Artificial Intelligence",
+            "icon": "/AI.avif"
+        },
+        {
+            "name": "Machine Learning",
+            "icon": "/ML.avif"
+        }
+    ],
+    "rightToLeft": [
+        {
+            "name": "BFSI",
+            "icon": "/BFSI.avif"
+        },
+        {
+            "name": "Healthcare",
+            "icon": "/HC.avif"
+        },
+        {
+            "name": "Marketing",
+            "icon": "/Marketing.avif"
+        },
+        {
+            "name": "Gen AI",
+            "icon": "/GENAI.avif"
+        },
+        {
+            "name": "Cloud Compunting",
+            "icon": "/CC.avif"
+        },
+        {
+            "name": "DevOps",
+            "icon": "/Devops.avif"
+        }
+    ]
+}

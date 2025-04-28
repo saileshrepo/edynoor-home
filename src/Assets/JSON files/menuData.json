@@ -1,0 +1,33 @@
+{
+    "courses": [
+        {
+            "title": "Certification Courses",
+            "subMenu": [
+                {
+                    "name": "Data Science and Generative AI Program",
+                    "provider": "Edynoor",
+                    "image": "Grey Orange Simple Letter Logo1.jpg",
+                    "duration": "13 months | 4 Capstone Projects",
+                    "certification": "Certification from Edynoor",
+                    "target": "For Working Professionals"
+                },
+                {
+                    "name": "Advance Data Scientist and AI",
+                    "provider": "Edynoor",
+                    "image": "Grey Orange Simple Letter Logo1.jpg",
+                    "duration": "5 to 6 months",
+                    "certification": "Coming Soon",
+                    "target": "Artificial Intelligence and Machine Learning"
+                },
+                {
+                    "name": "Artificial Intelligence and Machine Learning",
+                    "provider": "Edynoor",
+                    "image": "Grey Orange Simple Letter Logo1.jpg",
+                    "duration": "6 to 8 months",
+                    "certification": "Coming Soon",
+                    "target": "Artificial Intelligence and Machine Learning"
+                }
+            ]
+        }
+    ]
+}

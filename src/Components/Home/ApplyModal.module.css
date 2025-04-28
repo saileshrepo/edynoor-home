@@ -1,0 +1,182 @@
+/* Modal Overlay */
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    /* Allow vertical scroll */
+    padding: 20px;
+    z-index: 9999;
+}
+
+
+/* Modal Content */
+
+.modalContent {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-height: 90vh;
+}
+
+
+/* Left Section Styling */
+
+.leftSection {
+    flex: 1;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modalImage {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Right Section Styling */
+
+.rightSection {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+    line-height: 1.4;
+}
+
+
+/* Form Styling */
+
+.form {
+    width: 100%;
+}
+
+.form input,
+.form select {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.form button {
+    background-color: #0074cc;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #005fa3;
+}
+
+
+/* Close Button Styling */
+
+.closeButton {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+
+/* === Responsive Design === */
+
+@media (max-width: 768px) {
+    .modalContent {
+        flex-direction: column;
+        width: 95%;
+        max-height: none;
+        /* Allow full scroll */
+    }
+
+    .leftSection {
+        padding: 0;
+        height: 100%;
+    }
+
+    .modalImage {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .rightSection {
+        padding: 20px;
+        overflow-y: visible;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .form input,
+    .form select,
+    .form button {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modalContent {
+        width: 100%;
+    }
+
+    /* .modalImage {
+        max-height: 250px;
+    } */
+    h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .form input,
+    .form select,
+    .form button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
